@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
-public class Editor_Snap : MonoBehaviour
+public class CubeEditore : MonoBehaviour
 {
     // Update is called once per frame
     [Range(1f,20f)][SerializeField] float gridSize = 10f;
-    void Update()
+
+    TextMesh textMesh;
+
+    private void Start()
+    {   
+        textMesh = GetComponentInChildren<TextMesh>();
+        textMesh.text = "TEST";
+    }
+    private void Update()
     {
         Vector3 snapPos;
 

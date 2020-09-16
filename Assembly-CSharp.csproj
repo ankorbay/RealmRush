@@ -44,7 +44,7 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Editor_Snap.cs" />
+  <ItemGroup>     <Compile Include="Assets\CubeEditore.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/antonkorshunov/Documents/test_projects/Unity/Argon-Shooter/Realm Rush/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
