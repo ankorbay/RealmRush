@@ -21,10 +21,4 @@ public class EnemyMovement : MonoBehaviour
         }
         print("Patrol is over");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
