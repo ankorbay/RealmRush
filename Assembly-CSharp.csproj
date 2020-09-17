@@ -45,6 +45,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\CubeEditore.cs" />
+     <Compile Include="Assets\EnemyMovement.cs" />
+     <Compile Include="Assets\WayPoint.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/antonkorshunov/Documents/test_projects/Unity/Argon-Shooter/Realm Rush/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
