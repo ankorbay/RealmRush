@@ -19,16 +19,10 @@ public class WayPoint : MonoBehaviour
     public int GetGridSize(){
         return gridSize;
     }
-    // Update is called once per frame
+
     public void SetTopColor(Color color)
     {
         var topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
-        // print(topMeshRenderer);
         topMeshRenderer.material.color = color;
-    }
-
-    public void Update(){
-        if(isExplored) 
-            SetTopColor(exploredColor);
     }
 }
