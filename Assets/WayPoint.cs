@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WayPoint : MonoBehaviour
-{
+{   
+    [SerializeField] Color exploredColor;
+    public bool isExplored = false;
+    public WayPoint exploredFrom;
     Vector2Int gridPos;
     const int gridSize = 10;
     // Start is called before the first frame update
@@ -22,5 +25,10 @@ public class WayPoint : MonoBehaviour
         var topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
         // print(topMeshRenderer);
         topMeshRenderer.material.color = color;
+    }
+
+    public void Update(){
+        if(isExplored) 
+            SetTopColor(exploredColor);
     }
 }
